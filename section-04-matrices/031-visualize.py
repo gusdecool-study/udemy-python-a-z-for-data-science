@@ -1,4 +1,3 @@
-import matplotlib
 import matplotlib.pyplot as plt
 
 plt.rcParams['figure.figsize'] = 8, 4
