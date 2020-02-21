@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Run the code in 027-matrices.py first
 def myplot(data, playerList = Players):
-    color = {'KobeBryant': 'Black', 'JoeJohnson': 'Red', 'LeBronJames': 'Green', 'CarmeloAnthony': 'Blue',
+    color = {'KobP4-Demographic-Data.csveBryant': 'Black', 'JoeJohnson': 'Red', 'LeBronJames': 'Green', 'CarmeloAnthony': 'Blue',
              'DwightHoward': 'Magenta', 'ChrisBosh': 'Black', 'ChrisPaul': 'Red', 'KevinDurant': 'Green',
              'DerrickRose': 'Blue', 'DwayneWade': 'Magenta'}
 
