@@ -27,3 +27,17 @@ print(csv.info())
 # 8. get stats of the columns
 print(csv.describe())
 print(csv.describe().transpose())
+
+# -------------------------------------------------------------------------------------------------
+# 041. sub-setting panda
+# -------------------------------------------------------------------------------------------------
+
+# Part 1. Rows
+print(csv[21:26])
+
+# Get some part
+print(csv[['Country Name', 'Birth rate']].head())
+
+# Combining the two
+print(csv[2:8][['Country Name', 'Birth rate']])
+
