@@ -75,3 +75,10 @@ highIncomeFilter = csv['Income Group'] == 'High income'
 
 # Get unique values
 uniqueValue = csv['Income Group'].unique()
+
+# -------------------------------------------------------------------------------------------------
+# 044. .at() & .iat()
+# -------------------------------------------------------------------------------------------------
+
+print(csv.iat[3, 4])  # Get from index at 3 and column 4
+print(csv.at[3, 'Income Group'])  # Get from label at 3 and column 'Income Group'
