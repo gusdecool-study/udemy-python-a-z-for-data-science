@@ -41,3 +41,37 @@ print(csv[['Country Name', 'Birth rate']].head())
 # Combining the two
 print(csv[2:8][['Country Name', 'Birth rate']])
 
+# -------------------------------------------------------------------------------------------------
+# 042. basic operation
+# -------------------------------------------------------------------------------------------------
+
+# Math
+result = csv['Birth rate'] * csv['Internet users']
+print(result.head())
+
+# Add Column
+csv['MyResult'] = result
+print(csv.head())
+
+# Delete column
+csv.drop(columns='MyResult')
+print(csv.head())
+
+# -------------------------------------------------------------------------------------------------
+# 043. Filtering data frames
+# -------------------------------------------------------------------------------------------------
+
+# normal filter
+filterInternetUsers = csv['Internet users'] < 2
+filterBirthRate = csv['Birth rate'] > 40
+filteredCsv = csv[filterInternetUsers]
+
+# combined filters
+combinedFilter = filterInternetUsers & filterBirthRate
+combinedFilteredCsv = csv[combinedFilter]
+
+# string filter
+highIncomeFilter = csv['Income Group'] == 'High income'
+
+# Get unique values
+uniqueValue = csv['Income Group'].unique()
